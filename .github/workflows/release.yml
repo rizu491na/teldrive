@@ -34,14 +34,14 @@ jobs:
 
       - name: Build UI
         run: |
-          git clone https://github.com/tgdrive/teldrive-ui
-          cd teldrive-ui
+          git clone https://github.com/rizu491na/teldrive-ui-jp
+          cd teldrive-ui-jp
           pnpm install --frozen-lockfile
           export VITE_SERVER_VERSION=$GITHUB_REF_NAME
           pnpm run build
           cd ..
-          mv teldrive-ui/dist ui/dist
-          rm -rf teldrive-ui
+          mv teldrive-ui-jp/dist ui/dist
+          rm -rf teldrive-ui-jp
 
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v6
