@@ -1,6 +1,6 @@
 services:
   teldrive:
-    image: ghcr.io/rizu491na/teldrive-jp
+    image: ghcr.io/rizu491na/teldrive
     restart: always
     container_name: teldrive
     networks:
