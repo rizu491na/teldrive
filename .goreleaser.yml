@@ -1,5 +1,5 @@
 version: 2
-project_name: teldrive
+project_name: teldrive-jp
 env:
   - GO111MODULE=on
   
